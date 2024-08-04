@@ -1,19 +1,28 @@
-body {
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
   /* background-color: rgba(100, 100, 75, 0.5); */
 }
 
 #welcome-section {
-    background-color: rgba(100, 155, 175, 0.5);
+    background-color: rgba(49, 189, 240, 0.5);
     display: flex;
+    flex-direction: column; 
     justify-content: center;
-
+    align-items: center;
+    height: calc(100vh - 10vh);
+    margin-top: 10vh;
+    text-align: center;
 }
 
 #welcome-section h1 {
-    text-align: center;
-    margin: auto;
+    margin: 0;
     position: relative;
-    
 }
 
 #navbar {
@@ -37,8 +46,16 @@ body {
   } 
 }
 
-.spacer {
+/* .spacer {
   height: 100vh;
   width: 100%;
   background-color: rgba(155, 100, 55, 0.5);
-} 
+} */
+
+#projects {
+    background-color: rgba(55, 100, 55, 0.5);
+}
+
+#repositories {
+    background-color: rgba(49, 189, 240, 0.5);
+}
