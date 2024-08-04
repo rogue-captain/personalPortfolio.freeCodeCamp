@@ -1,15 +1,19 @@
 body {
-  background-color: rgba(100, 100, 75, 0.5);
+  /* background-color: rgba(100, 100, 75, 0.5); */
 }
 
 #welcome-section {
     background-color: rgba(100, 155, 175, 0.5);
+    display: flex;
+    justify-content: center;
+
 }
 
 #welcome-section h1 {
     text-align: center;
     margin: auto;
-    top: 60px;
+    position: relative;
+    
 }
 
 #navbar {
@@ -17,7 +21,7 @@ body {
   display: flex;
   top: 0;
   height: 10vh;
-  width: auto;
+  width: 100vw;
   padding: 5px;
   justify-content: space-around;
   align-items: center;
