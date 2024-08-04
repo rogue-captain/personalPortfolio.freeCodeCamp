@@ -1,16 +1,28 @@
-#Body {
+body {
   background-color: rgba(100, 100, 75, 0.5);
 }
 
-#navbar{
+#welcome-section {
+    background-color: rgba(100, 155, 175, 0.5);
+}
+
+#welcome-section h1 {
+    text-align: center;
+    margin: auto;
+    top: 60px;
+}
+
+#navbar {
   position: fixed;
   display: flex;
   top: 0;
-  height: 100vh;
+  height: 10vh;
+  width: auto;
   padding: 5px;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  gap: 15px;
+  background-color: rgba(55, 100, 55, 0.5);
   z-index: 1000;
 }
 
@@ -18,9 +30,11 @@
   #navbar {
     flex-direction: column;
     height: auto;
-  }
+  } 
+}
 
 .spacer {
   height: 100vh;
   width: 100%;
-}
+  background-color: rgba(155, 100, 55, 0.5);
+} 
