@@ -91,6 +91,10 @@
 
 #projects {
     background-color: rgba(55, 100, 55, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #repositories {
