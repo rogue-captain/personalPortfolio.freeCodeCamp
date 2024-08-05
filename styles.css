@@ -97,6 +97,32 @@
     align-items: center;
 }
 
+#project-grid {
+    
+}
+
+.project-grid-item {
+    height:auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.project-image {
+    height:auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.project-item-title {
+    text-align: center;
+}
+
 #repositories {
     background-color: rgba(49, 189, 240, 0.5);
+}
+
+.profile-link {
+
 }
