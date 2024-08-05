@@ -4,6 +4,18 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    40% {
+        transform: translate3d(0, -30px, 0); /* Move the link up 10px along the Y-axis */
+    }
+    60% {
+        transform: translate3d(0, -15px, 0); /* Move the link up 5px along the Y-axis */
+    }
+}
   
   body {
   /* background-color: rgba(100, 100, 75, 0.5); */
@@ -23,6 +35,15 @@
 #welcome-section h1 {
     margin: 0;
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#welcome-section:hover {
+    background-color: bisque;
+}
+
+#welcome-section h1:hover {
+    animation: bounce 3s;
 }
 
 #navbar {
@@ -37,6 +58,22 @@
   gap: 15px;
   background-color: rgba(55, 100, 55, 0.5);
   z-index: 1000;
+}
+
+.nav-link {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color:aqua;
+  text-decoration:solid;  
+  transform: translate3d(10px, 0, 0);
+  animation: bounce 1s;
+  border-radius: 8%;
 }
 
 @media (max-width: 600px) {
