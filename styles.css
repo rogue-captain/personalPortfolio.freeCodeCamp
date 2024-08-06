@@ -36,6 +36,7 @@
     margin: 0;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
 }
 
 #welcome-section:hover {
@@ -58,6 +59,10 @@
   gap: 15px;
   background-color: rgba(55, 100, 55, 0.5);
   z-index: 1000;
+}
+
+#navbar:hover {
+    background-color: rgba(0, 128, 128, 1);
 }
 
 .nav-link {
@@ -129,6 +134,10 @@
     color: white;
 }
 
+#projects:hover {
+    background-color: rgba(0, 128, 128, 1);
+}
+
 .project-item-title:hover {
     text-decoration: underline;
 }
@@ -145,6 +154,10 @@
     margin: auto;
     padding: 20px;
     align-items: center;
+}
+
+#repositories:hover {
+    background-color: bisque;
 }
 
 .profile-link {
