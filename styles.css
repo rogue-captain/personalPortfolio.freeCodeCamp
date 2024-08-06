@@ -91,14 +91,21 @@
 
 #projects {
     background-color: rgba(55, 100, 55, 0.5);
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 200;
 }
 
 #project-grid {
-    
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 .project-grid-item {
@@ -117,12 +124,56 @@
 
 .project-item-title {
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: white;
 }
+
+.project-item-title:hover {
+    text-decoration: underline;
+}
+
+/* ---- */
 
 #repositories {
     background-color: rgba(49, 189, 240, 0.5);
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
 }
 
 .profile-link {
+    margin-top: auto;
+    margin-bottom: 10 px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 100;
+    color: white;
+}
 
+.profile-link:hover {
+    text-decoration: underline;
+    animation: bounce 2s;
+}
+
+footer {
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+footer li {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
 }
