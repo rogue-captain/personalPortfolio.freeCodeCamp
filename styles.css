@@ -107,6 +107,11 @@
     font-weight: 200;
 }
 
+#projects h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
 #project-grid {
     display: flex;
     flex-direction: row-reverse;
@@ -153,6 +158,10 @@
     background-color: black;
 }
 
+.project-image:hover {
+    filter: brightness(200%);
+}
+
 #projects:hover {
     background-color: rgba(0, 128, 128, 1);
 }
@@ -165,7 +174,7 @@
 
 #repositories {
     background-color: rgba(49, 189, 240, 0.5);
-    height: 50vh;
+    height: calc(100vh - 10vh);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -179,17 +188,33 @@
     background-color: bisque;
 }
 
+#repositories h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#repositories-item-container {
+    border: 2px solid black;
+    height: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .profile-link {
     margin-top: auto;
-    margin-bottom: 10 px;
+    margin-bottom: 10vh;
     font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 100px;
     color: white;
 }
 
 .profile-link:hover {
     text-decoration: underline;
+    font-size: 30px;
+    color: royalblue;
     animation: bounce 2s;
 }
 
