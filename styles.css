@@ -121,10 +121,11 @@
 }
 
 .project-image {
-    height:auto;
-    width: auto;
-    max-height: 300px;
-    max-width: 300px;
+    height: 20vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .project-item-title {
