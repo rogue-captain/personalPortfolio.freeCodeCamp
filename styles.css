@@ -36,7 +36,8 @@
     margin: 0;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 50px;
+    text-shadow: 2px 2px 1px rgba(55, 100, 55, 0.5);
 }
 
 #welcome-section:hover {
@@ -109,6 +110,7 @@
 
 #projects h1 {
     font-size: 50px;
+    text-shadow: 2px 2px 1px rgba(55, 100, 55, 0.5);
     text-decoration: underline;
 }
 
@@ -196,7 +198,7 @@
 #repositories-item-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 50%;
     width: 80%;
     justify-content: center;
@@ -207,25 +209,26 @@
 
 #repositories-icons-container {
     display: flex;
-    flex-direction: column;
-    border: 2px solid black;
+    flex-direction: row;
+    /* border: 2px solid black; */
     height: 50%;
     width: 80%;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 10px;
 }
 .profile-link {
     margin-top: 20;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
-    font-weight: 100px;
+    font-weight: none;
     color: white;
 }
 
+/* idea: make the link "run" from cursor */
 .profile-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 30px;
     color: royalblue;
     animation: bounce 2s;
