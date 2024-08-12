@@ -162,6 +162,9 @@
 
 .project-image:hover {
     filter: brightness(200%);
+    z-index: 2000;
+    height: 120%;
+    width: 125%;
 }
 
 #projects:hover {
@@ -184,6 +187,11 @@
     margin: auto;
     padding: 20px;
     align-items: center;
+}
+
+#repositories h1,
+#repositories h3 {
+    margin-top: 10%;
 }
 
 #repositories:hover {
@@ -246,9 +254,25 @@ footer {
     background-color: rgba(49, 189, 240, 0.5);
 }
 
-footer li {
+footer p {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 20px;
+}
+
+footer p:hover {
+    animation: slideIn 2s ease-in-out 1s; 
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.slideIn {
+    animation: slideIn 2s ease forwards;
 }
